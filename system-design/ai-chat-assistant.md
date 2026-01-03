@@ -42,3 +42,8 @@ Requirement 3:
 - Monitoring & Observability
 - Security
 
+## Red Flags
+- Using a single RDBMS without sharding and partitioning for storing entire chat history
+- Storing large file uploads directly as BLOBs in the database instead of using Object Storage (S3/GCS) with a metadata reference.
+- Bad API design for creating and viewing conversations
+
